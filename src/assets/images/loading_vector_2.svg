@@ -1,0 +1,2 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><style>#l{transform-origin:CENTER;animation:l 1s cubic-bezier(0.2, 0.8, 0.6,0.6) infinite;fill:#345;}@keyframes l{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}</style><circle fill="none" stroke-width="4" stroke="#ddda" cx="24" cy="24" r="22"/><path id="l" d="M24,0 C37,0 48,10 48,24L44,24C44,12 35,4 24,0Z"/></svg>
+

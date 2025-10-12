@@ -1,0 +1,38 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" width="240px" height="240px">
+    <metadata>
+        <rdf:RDF xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+            <cc:work rdf:about="">
+                <cc:license>
+                    <cc:prohibits rdf:resource="http://web.resource.org/cc/Reproduction" />
+                    <cc:prohibits rdf:resource="http://web.resource.org/cc/Distribution" />
+                </cc:license>
+            </cc:work>
+        </rdf:RDF>
+    </metadata>
+    <title>Curious Coders Community Logo Loader</title>
+    <desc>Curious Coders Community Logo Loader</desc>
+    <g stroke-width="20" stroke-linecap="round" stroke="#3CB371">
+        <circle cx="120" cy="120" r="100" fill="none" stroke-dasharray="628.318531" stroke-dashoffset="157.079633" transform="rotate(-90 120 120)">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90 120 120" to="-450 120 120" dur="2s" begin="1s" repeatCount="indefinite" fill="freeze" />
+        </circle>
+        <circle cx="120" cy="120" r="55" fill="none" stroke-dasharray="345.575192" stroke-dashoffset="86.393798" transform="rotate(45 120 120)">
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="45 120 120" to="405 120 120" dur="2s" begin="1s" repeatCount="indefinite" fill="freeze" />
+        </circle>
+    </g>
+    <g fill="#3CB371">
+        <circle cx="40" cy="15" r="15">
+            <animate attributeName="cx" from="40" to="50" dur=".3s" begin="0.5s" repeatCount="1" fill="freeze" />
+            <animate attributeName="cy" from="15" to="60" dur=".3s" begin="0.5s" repeatCount="1" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 120 120" to="-360 120 120" dur="2s" begin="1s" repeatCount="indefinite" fill="freeze" />
+        </circle>
+        <circle cx="35" cy="65" r="25">
+            <animate attributeName="cx" from="35" to="120" dur=".3s" begin="0.5s" repeatCount="1" fill="freeze" />
+            <animate attributeName="cy" from="65" to="120" dur=".3s" begin="0.5s" repeatCount="1" fill="freeze" />
+        </circle>
+        <circle cx="80" cy="40" r="10">
+            <animate attributeName="cx" from="80" to="170" dur=".3s" begin="0.5s" repeatCount="1" fill="freeze" />
+            <animate attributeName="cy" from="40" to="120" dur=".3s" begin="0.5s" repeatCount="1" fill="freeze" />
+            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 120 120" to="360 120 120" dur="2s" begin="1s" repeatCount="indefinite" fill="freeze" />
+        </circle>
+    </g>
+</svg>
