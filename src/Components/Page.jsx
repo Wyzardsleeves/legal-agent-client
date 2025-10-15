@@ -1,10 +1,9 @@
 import { useState, useRef } from "react";
-import {Routes, Route} from 'react-router-dom';
 import axios from "axios";
-import '../assets/styles/Page.css';
 import loading_vector from '../assets/images/loading_vector_2.svg';
 import { sampleQueries } from "../utils/queries";
 import QueryResult from "./QueryResult";
+import '../assets/styles/Page.css';
 
 export default function Page() {
   const LOCAL_HOST = "http://localhost:5000";
@@ -29,7 +28,6 @@ export default function Page() {
       console.log(error);
     })
     .finally(() => {
-      console.log(recentQA)
       setIsLoading(false)
     });
   }
@@ -64,8 +62,8 @@ export default function Page() {
           <div>
             <section className="section-space">
               <h4>Suggested Queries</h4>
-              {sampleQueries.map(query => (
-                <span className="query-text" onClick={() => insertSampleQuery(query)}>
+              {sampleQueries.map((query, index) => (
+                <span key={`${index}-${query}`} className="query-text" onClick={() => insertSampleQuery(query)}>
                   <p className=" blue-text grey darken-3">
                     #{query}
                   </p>
@@ -83,6 +81,7 @@ export default function Page() {
                   type="text" 
                   className="validate" 
                   onChange={updateQuestion}
+                  maxlength="150"
                 />
                 <label htmlFor="question">What do you need?</label>
               </div>
@@ -140,10 +139,10 @@ export default function Page() {
             {subPage === "recentQueries" && (
               <section className="section-space">
                 <div>
-                  {true > 0 && (
+                  {recentQA.length > 0 && (
                     <> 
                       <h4>Recent Queries</h4>
-                      {recentQA.map(answer => (
+                      {recentQA.map((answer) => (
                           <QueryResult answer={answer} />
                       ))}
                     </>
