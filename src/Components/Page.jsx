@@ -83,7 +83,7 @@ export default function Page() {
                   onChange={updateQuestion}
                   maxlength="150"
                 />
-                <label htmlFor="question">What do you need?</label>
+                <label htmlFor="question">What do you need? <span className="red-text">(150 character limit)</span></label>
               </div>
               <div className="right-align form-buttons">
                 <button 
